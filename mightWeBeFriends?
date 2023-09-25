@@ -1,0 +1,83 @@
+
+print("Might We Be Friends?")
+print("What is your name?")
+friend = input()
+comp_Score = 0
+
+print("Q1. Do you live in PA?")
+residence = input()
+if residence == "yes":
+    print("Me too!")
+    comp_Score = comp_Score + 5
+elif residence != "yes":
+    print("Oh, that's too bad")
+
+print("Q2. Do you like dogs or cats?")
+dog = input()
+if dog == "yes":
+    print("I also love dogs!")
+    comp_Score = comp_Score + 5
+elif dog == "cats":
+    print("I also like cats")
+    comp_Score = comp_Score + 5
+
+print("Q3. Do you play sports")
+basketball = input()
+if basketball == "yes":
+    print("I play volleyball!")
+    comp_Score = comp_Score + 5
+print("What is your favorite sports team?")
+basketball_team = input()
+if basketball_team == "celtics":
+    print("We're going to be very good friends")
+    comp_Score = comp_Score + 5
+elif basketball_team != "warriors" and basketball_team != "celtics":
+    print("At least you don't like the warriors")
+    comp_Score = comp_Score + 5
+elif basketball_team == "warriors":
+    print("Warriors got lucky in the 2022 finals...")
+
+print("Q4. Do you like video games?")
+video_games = input()
+if video_games == "yes":
+    comp_Score = comp_Score + 5
+    print("Same, do you have a favorite game?")
+    favorite_game = input()
+    if favorite_game == "rocket league":
+        print("That's my favorite too!")
+        comp_Score = comp_Score + 5
+    elif favorite_game != "rocket league":
+        print("That's an awesome game!")
+    else:
+        print("They're not for everyone")
+
+print("Q5. What is your major?")
+major = input()
+if major == "computer science":
+    print("That's my major!")
+    comp_Score = comp_Score + 5
+elif major == "undecided":
+    print("That's okay you still have time!")
+else:
+    print("That's a cool major!")
+
+print("Q6. what fast food is your favorite?")
+burger_king = input()
+if burger_king == "burger king":
+    print("Let's get some, on me!")
+    comp_Score = comp_Score + 5
+elif burger_king != "yes":
+    print("That's okay, what fast food is your favorite?")
+    favorite_fastFood = input()
+    if favorite_fastFood == "mcdonalds":
+        print("Good choice")
+        comp_Score = comp_Score + 5
+    elif favorite_fastFood == "arbys":
+        print("Uh, alright then")
+    else:
+        print("Interesting Choice")
+
+
+print("Our companionship score: " + str(comp_Score) + "/40")
+
+
